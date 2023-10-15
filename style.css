@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Nabla', sans-serif;
+    src: url(Fonts/Nabla/Nabla-Regular-VariableFont_EDPT,EHLT.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Regular', sans-serif;
+    src: url(Fonts\Roboto\Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Pixelify Sans', sans-serif;
+    src: url(Fonts\Pixelify\PixelifySans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Amatic SC', sans-serif;
+    src: url(Fonts/Amatic/AmaticSC-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Lobster', sans-serif;
+    src: url(Fonts/Lobster/Lobster-Regular.ttfT);
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#body_header_title {
+    text-align: center;
+    border: 1px outset transparent;
+    background-color: hsla(226, 85%, 31%, 0.25);
+}
+
+#navigation_bar_button {
+    font-size: 100;
+    font-family: 'Nabla';
+
+    background-color: black;
+    border: 2px solid white;
+
+    position: relative;
+    left: 100px;
+}
+
+#border_testing_header {
+    border: 5px solid lime;
+    background-color: black;
+    color: limegreen;
+}
+
+#border_testing_paragraph {
+    border-top: 5px inset red;
+    border-bottom: 5px outset green;
+    border-right: 5px groove blue;
+    border-left: 5px groove yellow;
+    border-radius: 10px;
+
+    background-color: gray;
+    text-align: center;
+}
+
+#rgb_slider_box {
+    border: 5px 5px solid black;
+    background-color: gray;
+}
+
+
+
+#list_header_test {
+    text-align: center;
+    
+    border-top: 7px groove darkturquoise;
+    border-bottom: 7px groove darkturquoise;
+    border-right: 7px groove darkturquoise;
+    border-left: 7px groove darkturquoise;
+    border-radius: 20px;
+
+    
+
+    background-color: turquoise;
+}
+
+#shadow_test_terminal-header {
+    height: fit-content;
+    width: fit-content;
+
+    position: fixed;
+    left: 500px;
+    top: 50px;
+
+    background-color: black;
+    border: 4px solid white;
+    border-radius: 5px;
+
+    font-size: 50px;
+    
+    color: black;
+    
+    box-shadow: -5px -5px 5px red, 5px 5px 5px blue;
+    
+    text-shadow: -2px -2px 5px red, 2px 2px 5px blue;
+    }
+
+#shadow_test_terminal {
+    height: 480px;
+    width: 640px;
+
+    position: absolute;
+    left: 125px;
+    top: 400px;
+
+    background-color: black;
+    border: 4px solid forestgreen;
+    border-radius: 5px;
+
+    font-size: 25px;
+
+    color: limegreen;
+
+    box-shadow: 5px 5px 5px greenyellow, 5px 5px 5px greenyellow;
+}
+
+#unordered_list_test {
+    border: 4px dashed brown;
+    background-color: burlywood;
+    border-width: 6px;
+    border-radius: 10px;
+
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 20px;
+}
+
+#ordered_list_test {
+    border: 4px dashed brown;
+    background-color: burlywood;
+    border-width: 6px;
+    border-radius: 10px;
+
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 25px;
+    font-weight: 750;
+}
+
+#description_list_test {
+    border: 4px dashed brown;
+    background-color: burlywood;
+    border-width: 6px;
+    border-radius: 10px;
+
+    font-family: 'Lobster', sans-serif;
+    font-size: 20px;
+}
