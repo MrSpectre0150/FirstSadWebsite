@@ -15,63 +15,67 @@
         
         <script>
             function rgb_change_color(get_color_class) {
-                //var get_color = document.getElementsByClassName(get_color_class)
-                return get_color_class
+                
             }
         </script>
           
     </head>
 
-    <body style="background-color: rgb(url(''), url(), url());">
-            <header style="background-image: url(Media/Images/Blue_Ocean_Illustration.jpg); background-position: center;">
+    <body>
+        <header class="index_header">
 
-                <h1 id="body_header_title">
-                    Welcome to the Introductory Website
-                </h1>
+            <h1 id="body_header_title">
+                Welcome to the Introductory Website
+            </h1>
+            
+            <div id="navigation_bar">
+            </div>
+            <a href="https://mangareader.to/random" target="_blank">
+                <button id="navigation_bar_button">Click for Random Manga
+                </button>
+            </a>
 
-                <a href="https://mangareader.to/random" target="_blank">
-                    <button id="navigation_bar_button">Click for Random Manga
-                    </button>
-                </a>
+            <a href="lyrics.html">
+                <button id="navigation_bar_button">Lyrics website
+                </button>
+            </a>
 
-                <a href="lyrics.html">
-                    <button id="navigation_bar_button">Lyrics website
-                    </button>
-                </a>
+            <a href="media.html">
+                <button id="navigation_bar_button">Media website
+                </button>
+            </a>
 
-                <a href="media.html">
-                    <button id="navigation_bar_button">Media website
-                    </button>
-                </a>
+            <a href="form.html">
+                <button id="navigation_bar_button">Form Website
+                </button>
+            </a>
 
-                <a href="form.html">
-                    <button id="navigation_bar_button">Form Website
-                    </button>
-                </a>
+            <a href="terminal.html">
+                <button id="navigation_bar_button">Terminal Website
+                </button>
+            </a>
 
-                <a href="terminal.html">
-                    <button id="navigation_bar_button">Terminal Website
-                    </button>
-                </a>
+        </header>
 
-            </header>
-
-        <main style="background-image: url(Media/Images/Cool_Sky_Vertical_Wallpaper.jpg); background-position:100%;">
+        <main class="index_main">
 
             <h3 id="border_testing_header">Background Color Slider</h3>
             <div id="rgb_slider_box">
                 <p>Red
-                    <input type="range" min="0" max="255" value="10" class="rgb_slider rgb_red" oninput="this.nextElementSibling.value = this.value">
+                    <input type="range" min="0" max="255" value="10" id="rgb_slider" oninput="this.nextElementSibling.value = this.value">
                     <output></output>
                 </p>
                 <p>Green
-                    <input type="range" min="0" max="255" value="10" class="rgb_slider rgb_green" oninput="this.nextElementSibling.value = this.value">
+                    <input type="range" min="0" max="255" value="10" id="rgb_slider" oninput="this.nextElementSibling.value = this.value">
                     <output></output>
                 </p>
                 <p>Blue
-                    <input type="range" min="0" max="255" value="10" class="rgb_slider rgb_blue" oninput="this.nextElementSibling.value = this.value">
+                    <input type="range" min="0" max="255" value="10" id="rgb_slider" oninput="this.nextElementSibling.value = this.value">
                     <output></output>
                 </p>
+                <button id="background_color_reset">
+                    Reset
+                </button>
             </div>
 
             <h1><span style="background-color: rgb(60, 206, 60); color: black;">This is the SPAN header</span></h1>
@@ -104,7 +108,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatum, deleniti dolores, nesciunt dignissimos voluptate amet animi aliquam dolore perspiciatis qui neque, consequuntur porro. Corporis suscipit eum blanditiis labore saepe?
             </p>
 
-            <h1 style="color: green;">Lists:</h1>
+            <h1 style="color: green; border: 2px solid red; width: fit-content; border-radius: 10px; padding: 5px; margin-left: 50px; background-color: maroon;">Lists:</h1>
             <h3 id="list_header_test">This is an Unordered List</h3>
 
             <div id="shadow_test_div">
@@ -162,8 +166,8 @@
                 </dl>
             </div>
 
-            <h2 style="background-color: yellowgreen;">Store Hours</h2>
-            <table border="2" style="background-color: rgb(64, 211, 45);">
+            <h2 style="background-color: yellowgreen; width: fit-content; margin-left: 10px;">Store Hours</h2>
+            <table border="2" style="background-color: rgb(64, 211, 45); margin: auto;">
                 <tr align="center" style="background-color: orange;">
                     <th width="100">Sunday</th>
                     <th width="100">Monday</th>
@@ -185,7 +189,7 @@
             </table>
         </main>
 
-        <footer style="background-image: url(Media/Images/Ocean_Illustration.jpg); color: white;">
+        <footer class="index_footer">
             <br><br>
             <a>Instagram</a>
             <a>Facebook</a>

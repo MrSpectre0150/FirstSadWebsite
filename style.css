@@ -29,10 +29,37 @@ body {
     font-weight: 500;
 }
 
+
+.index_header {
+    background-image: url(Media/Images/banner_welcome.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.index_main {
+    background-image: url(Media/Images/Samurai_Bebop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.index_footer {
+    background-image: url(Media/Images/banner_sunset.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
 #body_header_title {
     text-align: center;
-    border: 1px outset transparent;
-    background-color: hsla(226, 85%, 31%, 0.25);
+    margin: auto;
+    padding: 50px;
+    visibility: hidden;
 }
 
 #navigation_bar_button {
@@ -41,15 +68,26 @@ body {
 
     background-color: black;
     border: 2px solid white;
+    
+    padding: 3px;
+}
 
-    position: relative;
-    left: 100px;
+#navigation_bar {
+    margin: auto;
 }
 
 #border_testing_header {
     border: 5px solid lime;
     background-color: black;
     color: limegreen;
+
+    width: fit-content;
+    
+    margin: auto;
+}
+
+#border_testing_header::first-letter {
+    font-size: 50px;
 }
 
 #border_testing_paragraph {
@@ -59,16 +97,59 @@ body {
     border-left: 5px groove yellow;
     border-radius: 10px;
 
+    margin: auto;
+    margin-top: 25px;
+
+    height: auto;
+    width: 250px;
+
     background-color: gray;
-    text-align: center;
+    text-align: justify;
+
+    padding: 10px;
+}
+
+#border_testing_paragraph::first-line {
+    font-size: 25px;
+}
+
+#border_testing_paragraph::selection {
+    color: limegreen;
+    background-color: black;
 }
 
 #rgb_slider_box {
-    border: 5px 5px solid black;
+    border: 2px solid black;
     background-color: gray;
+    margin: auto;
+    margin-top: 10px;
+    width: fit-content;
+    padding: 10px;
 }
 
+#rgb_slider {
+    font-size: 50px;
+    font-weight: 700;
 
+    color: red;
+}
+
+#background_color_reset {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#background_color_reset:hover {
+    color: black;
+    background-color: green;
+    font-size: 20px;
+}
+
+#background_color_reset:active {
+    color: black;
+    background-color: limegreen;
+    font-size: 20px;
+}
 
 #list_header_test {
     text-align: center;
@@ -79,22 +160,25 @@ body {
     border-left: 7px groove darkturquoise;
     border-radius: 20px;
 
-    
-
     background-color: turquoise;
+
+    width: fit-content;
+
+    margin: auto;
 }
 
 #shadow_test_terminal-header {
     height: fit-content;
     width: fit-content;
-
-    position: fixed;
-    left: 500px;
-    top: 50px;
+    
+    margin: auto;
+    margin-top: 100px;
 
     background-color: black;
     border: 4px solid white;
     border-radius: 5px;
+
+    padding: 50px;
 
     font-size: 50px;
     
@@ -103,19 +187,20 @@ body {
     box-shadow: -5px -5px 5px red, 5px 5px 5px blue;
     
     text-shadow: -2px -2px 5px red, 2px 2px 5px blue;
-    }
+}
 
 #shadow_test_terminal {
+    margin: auto;
+    margin-top: 50px;
+
     height: 480px;
     width: 640px;
-
-    position: absolute;
-    left: 125px;
-    top: 400px;
 
     background-color: black;
     border: 4px solid forestgreen;
     border-radius: 5px;
+
+    padding: 20px;
 
     font-size: 25px;
 
@@ -124,14 +209,25 @@ body {
     box-shadow: 5px 5px 5px greenyellow, 5px 5px 5px greenyellow;
 }
 
+
 #unordered_list_test {
     border: 4px dashed brown;
     background-color: burlywood;
     border-width: 6px;
     border-radius: 10px;
-
+    
     font-family: 'Pixelify Sans', sans-serif;
     font-size: 20px;
+    
+    width: fit-content;
+    
+    margin: 50px;
+}
+
+#unordered_list_test:hover {
+    background-color: transparent;
+    color: transparent;
+    text-shadow: 1px 1px white, -1px -1px black;
 }
 
 #ordered_list_test {
@@ -139,10 +235,20 @@ body {
     background-color: burlywood;
     border-width: 6px;
     border-radius: 10px;
-
+    
     font-family: 'Amatic SC', sans-serif;
     font-size: 25px;
     font-weight: 750;
+    
+    width: fit-content;
+    
+    margin: 50px;
+}
+
+#ordered_list_test:hover {
+    background-color: transparent;
+    color: transparent;
+    text-shadow: 1px 1px white, -1px -1px black;
 }
 
 #description_list_test {
@@ -150,7 +256,43 @@ body {
     background-color: burlywood;
     border-width: 6px;
     border-radius: 10px;
-
+    
     font-family: 'Lobster', sans-serif;
     font-size: 20px;
+    
+    margin: 50px;
+    
+    width: fit-content;
 }
+
+#description_list_test:hover {
+    background-color: transparent;
+    color: transparent;
+    text-shadow: 1px 1px white, -1px -1px black;
+}
+
+#char_desc {
+    color: black;
+    font-weight: 700;
+}
+
+#char_box {
+    border: 5px solid orange;
+    background-color: goldenrod;
+    display: flow-root;
+    padding: 25px;
+    margin: 50px;
+}
+
+#goku_desc {
+    float: right;
+    margin-left: 10px;
+    background-color: gray;
+}
+
+#vegeta_desc {
+    float: left;
+    margin-right: 10px;
+    background-color: purple;
+}
+
